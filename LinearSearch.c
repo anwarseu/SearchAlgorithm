@@ -11,6 +11,10 @@ int linear_search(int A[], int n, int key){
 int main(int argc, const char * argv[]) {
     int mark[5] = {19, 10, 8, 17, 9};
     int index = linear_search(mark, 5, 9);
-    printf("%d \n", mark[index]);
+    if (index > -1) {
+        printf("%d \n", mark[index]);
+    }else{
+        printf("Your value not found! \n");
+    }
     return 0;
 }
